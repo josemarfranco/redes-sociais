@@ -1,0 +1,8 @@
+- Página de login
+- Página de cadastro para novos usuários
+- Feed de posts
+- Edição de perfil do usuário (foto e informações pessoais)
+- Álbum de fotos no perfil do usuário
+- Criação de posts com fotos e texto
+- Reação à posts de outros usuários como respostas ao posts e emojis
+- Criação de perfis comuns onde usuários podem se inscrever e interagir (comunidades)
