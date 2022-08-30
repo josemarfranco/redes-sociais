@@ -17,7 +17,7 @@ header {
 .centro {
   text-align: center;
 }
-input[type=text], input[type=password], input[type=number] {
+input[type=text], input[type=password], input[type=number], input[type=date] {
     border: none;
     background-color:snow;
     width: 50%;
@@ -25,7 +25,7 @@ input[type=text], input[type=password], input[type=number] {
     margin: 5px 0 20px 0;
   }
   
-input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=date]:focus {
     background-color: #ddd;
     outline: none;
   }
