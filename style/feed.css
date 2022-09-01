@@ -10,40 +10,94 @@ header {
     border-color: #F2F2F2;
     background-color:#FFFFFF;
 }
+
 .search {
+    height: 66px;
+    width: 400px;
     display: block;
     margin: 22px auto;
     background-color: #F2F2F2;
-    height: 66px;
-    width: 400px;
     border-width: 0px;
     border-radius: 5px;
 }
+
 .users {
-    display: block;
-    margin: auto;
-    background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #F2F2F2;
     height: 200px;
     width: 400px;  
-}
-.post-box {
     display: block;
-    margin: 8px auto;
+    margin: auto;
+    background-color: none;
+    border: none;
+}
+
+.users-photo {
+    display: inline;
+    height: 78px;
+    width: auto;
+    margin-top: 100px;
+    margin-left: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DFDDDD;
+    border-radius: 50%;
+}
+
+.post-box {
+    height: 577px;
+    width: 400px;
+    display: block;
+    margin: 10px auto;
     background-color: white;
     border-style: solid;
     border-width: 1px;
     border-radius: 5px;
     border-color: #F2F2F2;
-    height: 577px;
-    width: 400px;
+}
+
+.post-photo {
+    display: inline;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #DFDDDD;
+    border-radius: 50%;
 }
 .post-img {
-    margin-top: 50px;
     height: 400px;
     width: 400px;
+    margin-top: 10px;   
 }
 
+.post-position-button {
+    height: 25px;
+    width: 400px;
+    display: block;
+    margin: 0px auto;
+    background-color: none;
+    border: none;
+}
 
+.post-button {
+    height: 24px;
+    width: 24px;
+    margin: 0px 1px;
+}
+
+.post-comment {
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    margin: 10px 10px;
+    background-color: #FBFBFB;
+}
+.post-user-name {
+display: inline-flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: #707070;
+    margin: 5px 5px 10px 5px;
+    text-align: center;
+}
