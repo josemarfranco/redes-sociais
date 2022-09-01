@@ -1,9 +1,47 @@
-h1{
-    color: #E38634;
+header{
     text-transform: uppercase;
     text-align: center;
-    }
+}
+
+img{
+    height: 150px;
+    width: 150px;
+}
 
 body{
+    background-color: #E38634;
+}
 
+div{
+    margin: 15px;
+}
+
+button{
+    border-radius: 5px;
+    background-color: #E38634;
+    color: aliceblue;
+    margin-left: 200px;
+}
+
+.containner{
+    background-color: aliceblue;
+    color: #E38634;
+    margin: auto;
+    border-radius: 50px;
+    padding: 16px;
+    width: 500px;
+    height: 400px;
+    font-weight: bold;
+}
+
+.alinhamento{
+    text-align: center;
+}
+
+.caixas{
+    margin-left: 150px;
+}
+
+.centralizar {
+    margin-left: 220px;
 }
