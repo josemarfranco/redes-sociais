@@ -5,78 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/cadastro.css">
+    <script src="JS/cadastro.js"></script>
     <title>PixIt - Cadastro</title>
 </head>
-<body>
-    <header>
-        <img src="images/Pixit.png" width="80" height="80" alt="PixIt!">
-    </header>
+<body class="container">
 
-    <form>
-      <div class="container">
-        <h1>Cadastro</h1><br>
-        <br>
-    
-        <label><b>Email</b></label><br>
-        <input type="text" placeholder="Insira seu email">
-        <br>
+    <div class="left">
+    </div>
 
-        <label><b>Nome</b></label><br>
-        <input type="text" placeholder="Insira seu nome e sobrenome">
-        <br>
+    <div class="right">
+      <form id="register-form">
+          <h1>dados pessoais</h1>
+          <hr>
+          <br>
+          <br>
+          <br>
+
+          <label>email</label><br>
+          <input id="email-field" type="text" placeholder="Insira seu email">
+          <br>
+
+          <label>nome</label><br>
+          <input id="name-field" type="text" placeholder="Insira seu nome e sobrenome">
+          <br>
         
-        <label><b>Data de Nascimento</b></label><br>
-        <input type="date" min="1950-01-01" max="2012-01-01">
-        <br>
+          <label>data de nascimento</label><br>
+          <input id="dob-field" class= "gray" type="date" min="1950-01-01" max="2012-01-01" aria-label="data de nascimento">
+          <br>
 
-        <label><b>Estado</b></label><br>
-        <select>
-          <option>Escolha um estado da lista</option>
-          <option value="ac">Acre</option>
-          <option value="al">Alagoas</option>
-          <option value="ap">Amapá</option>
-          <option value="am">Amazonas</option>
-          <option value="ba">Bahia</option>
-          <option value="ce">Ceará</option>
-          <option value="df">Distrito Federal</option>
-          <option value="es">Espírito Santo</option>
-          <option value="go">Goiás</option>
-          <option value="ma">Maranhão</option>
-          <option value="mt">Mato Grosso</option>
-          <option value="ms">Mato Grosso do Sul</option>
-          <option value="mg">Minas Gerais</option>
-          <option value="pa">Pará</option>
-          <option value="pa">Paraíba</option>
-          <option value="pe">Pernambuco</option>
-          <option value="pi">Piauí</option>
-          <option value="rj">Rio de Janeiro</option>
-          <option value="rn">Rio Grande do Norte</option>
-          <option value="rs">Rio Grande do Sul</option>
-          <option value="ro">Rondônia</option>
-          <option value="rr">Roraima</option>
-          <option value="sc">Santa Catarina</option>
-          <option value="sp">São Paulo</option>
-          <option value="se">Sergipe</option>
-          <option value="to">Tocantins</option>
-        </select>
+          <label>estado</label><br>
+          <select id="br-state-field" class="gray" aria-label="estado">
+            <option>escolha um estado da lista</option>
+            <option value="ac">Acre</option>
+            <option value="al">Alagoas</option>
+            <option value="ap">Amapá</option>
+            <option value="am">Amazonas</option>
+            <option value="ba">Bahia</option>
+            <option value="ce">Ceará</option>
+            <option value="df">Distrito Federal</option>
+            <option value="es">Espírito Santo</option>
+            <option value="go">Goiás</option>
+            <option value="ma">Maranhão</option>
+            <option value="mt">Mato Grosso</option>
+            <option value="ms">Mato Grosso do Sul</option>
+            <option value="mg">Minas Gerais</option>
+            <option value="pa">Pará</option>
+            <option value="pa">Paraíba</option>
+            <option value="pe">Pernambuco</option>
+            <option value="pi">Piauí</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="rn">Rio Grande do Norte</option>
+            <option value="rs">Rio Grande do Sul</option>
+            <option value="ro">Rondônia</option>
+            <option value="rr">Roraima</option>
+            <option value="sc">Santa Catarina</option>
+            <option value="sp">São Paulo</option>
+            <option value="se">Sergipe</option>
+            <option value="to">Tocantins</option>
+          </select>
 
-        <br>
-        <br>
-        <br>
-    
-        <label><b>Senha</b></label><br>
-        <input type="password" placeholder="Defina sua senha">
-        <br>
-    
-        <label><b>Confirmação da Senha</b></label><br>
-        <input type="password" placeholder="Repita sua senha">
-        <br>
-    
-        <button type="submit" class="botaosalvar">Salvar cadastro</button>
-      </div>
-    </form>
-    <footer>
+          <br>
+          <br>
+          <br>
 
-    </footer>
+          <h1>cadastre a senha</h1>
+          <hr>
+          <br>
+          <br>
+          <br>
+  
+          <label>senha</label><br>
+          <input id="password-field" type="password" placeholder="Defina sua senha">
+          <br>
+    
+          <label>confirmação da senha</label><br>
+          <input id="password-confirmation-field" type="password" placeholder="Repita sua senha">
+          <br>
+          <div class="buttonclass">
+            <button id="register-submit-button" type="submit" onclick="saveFile()">criar conta</button>
+          </div>
+          <br>
+
+      </form>
+    </div>
+
     </body>
 </html>

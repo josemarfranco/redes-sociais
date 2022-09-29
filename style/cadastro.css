@@ -1,53 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  font-size:small;
+  color: gray;
+}
 
 .container {
-    padding: 20px;
-  }
-
-header {
-  height: 80px;
-  width: 100%;
-  background-color: #E38634;
+  display: flex;
 }
 
-.centro {
+.left {
+  width: 50%;
+  background-color: #3C4B5A;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+hr {
+  width: 300px;
+  margin: 2px;
+}
+
+h1 {
+  margin: 2px;
+}
+
+form {
+  padding: 50px 100px;
+}
+
+input,select {
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  box-sizing: border-box;
+  border-color: grey;
+  border-width: thin;
+}
+
+button {
+  border-radius: 5px;
+  background-color: #93C558;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 160px;
   text-align: center;
 }
-input[type=text], input[type=password], input[type=number], input[type=date],select {
-    border: none;
-    background-color:snow;
-    width: 50%;
-    padding: 16px;
-    margin: 5px 0 20px 0;
-  }
-  
-input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=date]:focus,select:focus {
-    background-color: #ddd;
-    outline: none;
-  }
-  
-.botaosalvar {
-    background-color: #E38634;
+
+.buttonclass {
+  text-align: left;
+}
+
+::placeholder,.gray {
+  color: lightgrey;
+}
+
+option:not(:first-of-type) {
+  color: black;
+}
+
+@media only screen and (max-width: 600px){
+  body {
     color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 20%;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #3C4B5A;
   }
 
-footer {
-    font-size: 12px;
-    position: fixed;
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .left {
+    width: 0%;
+    height: 0%;
+  }
+
+  .right {
+    min-width: 300px;
     width: 100%;
-    bottom: 0;
-    background-color:#E38634;
-    color: white;
+    display: block;
+  }
+
+  form {
+    padding: 50px;
+  }
+
+  input,select {
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px 0 20px 0;
+    box-sizing: border-box;
+    border-color: white;
+    border-width: thin;
+  }
+
+  .buttonclass {
     text-align: center;
-    padding: 40px;
+  }
 }
