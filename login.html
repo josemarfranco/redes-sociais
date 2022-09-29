@@ -9,25 +9,26 @@
     <title>PixIt</title>
 </head>
 <body>
-    <header><img src="images/Pixit.png"></header>
+    <header></header>
 
     <div class="containner">
-        <h1 class="alinhamento">Bem-Vindo</h1>
-    <p class="alinhamento">Sua nova rede social tem nome: Pix It!
-        Participe e venha se conectar com os amigos e se divertir conosco. </p>
+        
+        <div id="border">
+        <label for="email" class="centralizar">Email</label>
+        <input type="text" name="Insira seu login" class="centralizar">
         <div></div>
-        <label for="email" class="centralizar">Login</label>
+        <label for="senha" class="centralizar">Digite sua senha</label>
+        <input type="password" name="Insira a sua senha" class="centralizar">
+        
         <div></div>
-        <input type="text" name="Insira seu login" class="caixas">
+        <p class="paragrafo">Esqueceu sua senha?</p>
         <div></div>
-        <label for="senha" class="centralizar">Senha</label>
+        <button class="button" onclick="botaoClicar">Login</button>
         <div></div>
-        <input type="password" name="Insira a sua senha" class="caixas">
+        <p class="paragrafo">Ainda não é cadastrado?</p>
         <div></div>
-        <button class="centralizar" onclick="botaoClicar">Entrar</button>
-        <div></div>
-        <p class="alinhamento">Ainda não é cadastrado?</p>
-        <button onclick="nomeBotao">Cadastre-se</button>
+        <p class="paragrafo">Cadastre-se</p>
+        </div>
 
     </div>
 
