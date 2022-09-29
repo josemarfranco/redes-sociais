@@ -15,10 +15,6 @@ let saveFile = () => {
         'Senha: ' + pw.value + ' \r\n ' +
         'Confirmação da Senha: ' + pwconf.value;
     
-    if (pw !== pwconf) {
-        alert("As senhas não conferem.")
-    }
-    
     const textToBLOB = new Blob([data], { type: 'text/plain' });
     const sFileName = 'registro.txt';
 
