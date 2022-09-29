@@ -29,6 +29,6 @@ let saveFile = () => {
         newLink.style.display = "none";
         document.body.appendChild(newLink);
     }
-
-    newLink.click(); 
+    alert("Cadastro criado com sucesso!");
+    newLink.click();
 }
